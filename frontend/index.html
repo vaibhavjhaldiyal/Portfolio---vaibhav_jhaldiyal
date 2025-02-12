@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Jhaldiyal | Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Vaibhav Jhaldiyal</h1>
+            <p class="tagline">Full-Stack Developer | AI/ML Practitioner</p>
+            <nav>
+                <ul>
+                    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#research"><i class="fas fa-search"></i>Research</a></li>
+                    <li><a href="#comments"><i class="fas fa-comments"></i> Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="about-text">Results-driven Computer Science student with a strong foundation in software development, 
+            problem-solving, and full-stack technologies. Proven ability to build scalable applications using 
+            Java, Python, and modern frameworks like Flask and SpringBoot. Passionate about leveraging 
+            AI/ML and data science to solve real-world problems. Adept at competitive programming with 
+            250+ problems solved on LeetCode. Seeking an internship to contribute to innovative projects and 
+            grow in a dynamic tech environment.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Technical Projects</h2>
+        <div class="project-card">
+            <h3>AI Chatbot for Assistance </h3>
+            <p class="tech-stack">Python, Flask, Cohere LLM</p>
+            <p>Developed an intelligent chatbot leveraging Cohere's large language model (LLM) for seamless 
+               conversational assistance. 
+               Built a Flask-based backend to handle user inputs, process them using the Cohere API, and 
+               generate contextually relevant responses. </p>
+        </div>
+        <div class="project-card">
+            <h3>Currency Converter Web Application</h3>
+            <p class="tech-stack"> HTML | CSS | JavaScript | API Integration</p>
+            <p>Designed a user-friendly interface with displaying country flags for currency selection. 
+    Integrated ExchangeRate APIs to fetch live currency rates and perform conversions. </p>
+        </div>
+        <div class="project-card">
+            <h3>Optimized Flappy Bird Game</h3>
+            <p class="tech-stack">  Java, Data Structures and Algorithms (DSA)</p>
+            <p>Developed a Flappy Bird clone with enhanced gameplay using DSA concepts 
+                to improve efficiency and reduce complexity. 
+                Implemented dynamic pathfinding algorithms for smoother gameplay. </p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Professional Certifications</h2>
+        <div class="certification-card">
+            <h3>Full Stack Web Development Training (June – July 2022)</h3>
+            <p>Gained proficiency in front-end (HTML, CSS, JavaScript) and back-end (Node.js, databases) 
+                technologies. </p>
+        </div>
+        <div class="certification-card">
+            <h3>Data Science Course (Udemy, July 2023) </h3>
+            <p>Focused on Python-based tools and techniques for data analysis and visualization. </p>
+        </div>
+        <div class="certification-card">
+            <h3>Java Programming Internship (CodSoft, August 2024) </h3>
+            <p>Developed and submitted 5 Java projects showcasing expertise in object-oriented 
+                programming and software principles </p>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research & Publication</h2>
+        <div class="certification-card">
+            <h3>Enhancing Gameplay Experience through Advanced Non-Player Character AI</h3>
+            <p>Co-authored a research paper exploring innovative AI techniques to enhance the behavior 
+                and decision-making of Non-Player Characters(NPCs) in video games. 
+                Focused on implementing algorithms such as Reinforcement Learning and Dynamic 
+                Pathfinding (A)* to improve realism and interactivity in NPC gameplay. 
+                Successfully submitted on April 16, 2024, with Submission ID: 2351518835.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Connect With Me</h2>
+        <div class="contact-links">
+            <div class="contact-card">
+                <i class="fas fa-envelope fa-2x"></i>
+                <a href="mailto:vaibhavjhaldiyal89@gmail.com">Gmail</a>
+            </div>
+            <div class="contact-card">
+                <i class="fab fa-github fa-2x"></i>
+                <a href="https://github.com/vaibhavjhaldiyal">GitHub Profile</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-code fa-2x"></i>
+                <a href="https://leetcode.com/u/vaibhav_0315/">LeetCode Solutions</a>
+            </div>
+            <div class="contact-card">
+                <i class="fab fa-linkedin fa-2x"></i>
+                <a href="https://www.linkedin.com/in/vaibhav-jhaldiyal-b5a54723a/">LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="comments">
+        <h2>Professional Feedback</h2>
+        <div id="comment-section">
+            <textarea id="commentText" placeholder="Share your professional feedback..."></textarea>
+            <button onclick="submitComment()">Post Feedback</button>
+            <div id="commentList" class="comments-container"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
