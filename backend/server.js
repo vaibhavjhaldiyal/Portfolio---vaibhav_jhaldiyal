@@ -9,7 +9,11 @@ const app = express();
 app.use(express.json());
 
 // Configure CORS (Restrict in Production)
-app.use(cors({ origin: "http://127.0.0.1:5500" }));
+app.use(cors({ 
+    origin: process.env.FRONTEND_URL, 
+    credentials: true 
+}));
+
 
 // Debugging: Check if MONGO_URI is loaded
 console.log("🔍 MONGO_URI:", process.env.MONGO_URI);
