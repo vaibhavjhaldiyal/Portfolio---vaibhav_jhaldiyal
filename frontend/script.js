@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://portfolio-vaibhav-jhaldiyalw.onrender.com"; // ✅ Update with actual backend URL
+const BACKEND_URL = "https://portfolio-vaibhav-jhaldiyalw.onrender.com"; 
 
 // ✅ Function to Submit a Comment
 async function submitComment() {
@@ -9,7 +9,6 @@ async function submitComment() {
     }
 
     let commentText = commentInput.value.trim();
-
     if (!commentText) {
         alert("⚠️ Please enter a comment!");
         return;
@@ -23,7 +22,6 @@ async function submitComment() {
         });
 
         const result = await response.json();
-
         if (response.ok) {
             alert("✅ Comment submitted!");
             commentInput.value = ""; // ✅ Clear input after submission
@@ -45,18 +43,16 @@ async function loadComments() {
         return;
     }
 
-    commentList.innerHTML = "<p>🔄 Loading comments...</p>"; // ✅ Show loading message
+    commentList.innerHTML = "<p>🔄 Loading comments...</p>"; 
 
     try {
         const response = await fetch(`${BACKEND_URL}/api/comments`);
-
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
         const data = await response.json();
         console.log("✅ Comments loaded:", data);
 
-        commentList.innerHTML = ""; // ✅ Clear list before adding new comments
-
+        commentList.innerHTML = ""; 
         if (data.length === 0) {
             commentList.innerHTML = "<p>🚫 No comments yet. Be the first to comment!</p>";
             return;
@@ -73,17 +69,7 @@ async function loadComments() {
     }
 }
 
-// ✅ Ensure the DOM is fully loaded before adding event listeners
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("✅ DOM Loaded");
-    
-    loadComments(); // Load comments on page load
-
-    const submitBtn = document.getElementById("submitBtn");
-    if (submitBtn) {
-        submitBtn.addEventListener("click", submitComment);
-    } else {
-        console.error("❌ Element #submitBtn not found!");
-    }
+    loadComments();
+    document.getElementById("submitBtn").addEventListener("click", submitComment);
 });
-
